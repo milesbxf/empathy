@@ -58,10 +58,8 @@ func InitWithConfig(clusterName, kindConfig string) error {
 	kindCluster, err = Create(
 		clusterName,
 		kubeconfig.Name(),
-		`
-kind: Cluster
-apiVersion: kind.sigs.k8s.io/v1alpha3
-    `)
+		kindConfig
+	)
 	return err
 }
 

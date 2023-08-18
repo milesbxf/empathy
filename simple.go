@@ -25,7 +25,7 @@ func Init(clusterName string) error {
 		clusterName,
 		`
 kind: Cluster
-apiVersion: kind.sigs.k8s.io/v1alpha3
+apiVersion: kind.x-k8s.io/v1alpha4
     `)
 }
 
